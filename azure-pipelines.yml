@@ -6,6 +6,13 @@ variables:
   bc_license: 'C:\license\license.flf'  
 
 steps:
+
+- task: CopyFiles@2
+  displayName: 'Copy License flf'
+  inputs:
+    Contents: 'license/**'
+    TargetFolder: '$(Agent.HomeDirectory)'
+
 - task: ALOpsDockerStart@1
   inputs:
     docker_image: mcr.microsoft.com/businesscentral/sandbox
