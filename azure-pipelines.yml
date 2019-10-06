@@ -3,7 +3,6 @@ name: $(Build.BuildId)
 variables:
   AppVersion: '1.0.[yyyyWW].*'
   TestFilter: '88980..88989'
-  bc_license: '$(Agent.TempDirectory)/DynSol_BC15.flf'
 
 steps:
 
@@ -25,7 +24,7 @@ steps:
   displayName: 'ALOps License Import'
   inputs:
     usedocker: true
-    license_path: $(bc_license)
+    license_path: $(secureLicense.secureFilePath)
 
 - task: ALOpsAppCompiler@1
   displayName: 'Compile Extension'
