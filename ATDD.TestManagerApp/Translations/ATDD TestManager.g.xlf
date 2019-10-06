@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="ATDD TestManager">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 2913467907 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ATDDSetup_DSK</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ATDDSetup_DSK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2913467907 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ATDDSetup_DSK - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 634982210 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ATDDTestElement_DSK</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ATDDTestElement_DSK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 634982210 - Field 3543273187 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Feature Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ATDDTestElement_DSK - Field Feature Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 634982210 - Field 3924009437 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Scenario Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ATDDTestElement_DSK - Field Scenario Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 634982210 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ATDDTestElement_DSK - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 634982210 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ATDDTestElement_DSK - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 634982210 - Field 1131619133 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ATDDTestElement_DSK - Field Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3034610328 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ATDDTestFeature_DSK</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ATDDTestFeature_DSK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3034610328 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ATDDTestFeature_DSK - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3034610328 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ATDDTestFeature_DSK - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4040932026 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ATDDTestScenario</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ATDDTestScenario_DSK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4040932026 - Field 3543273187 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Feature Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ATDDTestScenario_DSK - Field Feature Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4040932026 - Field 3641927271 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ATDDTestScenario_DSK - Field ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4040932026 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ATDDTestScenario_DSK - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3021279959 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ATDD Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ATDDSetup_DSK Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 193959495 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ATDD Test Elements</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ATDDTestElements_DSK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 638603057 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ATDD Test Features</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ATDDTestFeatures_DSK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2809489887 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ATDD Test Scenarios</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ATDDTestScenarios_DSK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1962885639 - EnumValue 1695757941 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Given</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum TestScenarioElementType_DSK - EnumValue GIVEN - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1962885639 - EnumValue 3074280960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>When</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum TestScenarioElementType_DSK - EnumValue WHEN - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1962885639 - EnumValue 738636865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Then</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum TestScenarioElementType_DSK - EnumValue THEN - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
