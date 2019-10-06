@@ -20,6 +20,22 @@ steps:
     usedocker: true
     nav_app_version: $(AppVersion)
     failed_on_warnings: true    
+    targetproject: ./ATDD.TestManagerApp/app.json 
+
+- task: ALOpsAppPublish@1
+  displayName: 'Publish AL-App'
+  inputs:
+    usedocker: true
+    nav_artifact_app_filter: '*.app'   
+    skip_verification: true 
+
+- task: ALOpsAppCompiler@1
+  displayName: 'Compile Extension'
+  inputs:
+    usedocker: true
+    nav_app_version: $(AppVersion)
+    failed_on_warnings: true    
+    targetproject: ./ATDD.TestManagerTest/app.json 
 
 - task: ALOpsAppPublish@1
   displayName: 'Publish AL-App'
