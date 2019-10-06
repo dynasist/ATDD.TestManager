@@ -3,15 +3,14 @@ name: $(Build.BuildId)
 variables:
   AppVersion: '1.0.[yyyyWW].*'
   TestFilter: '88980..88989'
-  bc_license: 'C:\license\license.flf'  
+  bc_license: '$(Agent.TempDirectory)/DynSol_BC15.flf'
 
 steps:
 
-- task: CopyFiles@2
-  displayName: 'Copy License flf'
+- task: DownloadSecureFile@1
+  name: secureLicense
   inputs:
-    Contents: 'license/**'
-    TargetFolder: '$(Agent.HomeDirectory)'
+    secureFile: 'DynSol_BC15.flf'
 
 - task: ALOpsDockerStart@1
   inputs:
