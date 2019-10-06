@@ -13,12 +13,17 @@ steps:
 - task: ALOpsDockerWait@1
   inputs:
     search_string: 'Ready for connections!'
+
+- task: DownloadSecureFile@1
+  name: licenseFile
+  inputs:
+    secureFile: 'DynSol_BC15.flf'
     
 - task: ALOpsLicenseImport@1
   displayName: 'ALOps License Import'
   inputs:
     usedocker: true
-    license_path: $(AGENT_TEMPDIRECTORY)/DynSol_BC15.flf
+    license_path: $(licenseFile.secureFilePath)
 
 - task: ALOpsAppCompiler@1
   displayName: 'Compile Extension'
