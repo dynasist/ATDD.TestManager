@@ -18,7 +18,7 @@ steps:
   displayName: 'ALOps License Import'
   inputs:
     usedocker: true
-    license_path: $AGENT_TEMPDIRECTORY/DynSol_BC15.flf    
+    license_path: $(AGENT_TEMPDIRECTORY)/DynSol_BC15.flf
 
 - task: ALOpsAppCompiler@1
   displayName: 'Compile Extension'
