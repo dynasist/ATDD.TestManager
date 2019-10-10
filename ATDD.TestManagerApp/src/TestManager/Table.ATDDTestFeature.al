@@ -17,6 +17,13 @@ table 88971 ATDDTestFeature_DSK
             Caption = 'Name';
             DataClassification = CustomerContent;
         }
+
+        field(10; "Test Project Code"; Code[50])
+        {
+            Caption = 'Test Project Code';
+            DataClassification = CustomerContent;
+            TableRelation = ATDDTestProject_DSK.Code;
+        }
     }
     keys
     {

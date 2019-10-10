@@ -21,7 +21,7 @@ page 88973 "ATDDTestElements_DSK"
                     //Caption = 'Feature Code';
                 }
 
-                field("Scenario Code"; "Scenario Code")
+                field("Scenario Code"; "Scenario ID")
                 {
                     ApplicationArea = All;
                     //Caption = 'Scenario Code';

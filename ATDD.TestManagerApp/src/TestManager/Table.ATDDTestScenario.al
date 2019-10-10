@@ -11,6 +11,7 @@ table 88972 ATDDTestScenario_DSK
         {
             Caption = 'Feature Code';
             DataClassification = CustomerContent;
+            TableRelation = ATDDTestFeature_DSK.Code;
         }
         field(2; ID; Integer)
         {
@@ -22,6 +23,14 @@ table 88972 ATDDTestScenario_DSK
             Caption = 'Name';
             DataClassification = CustomerContent;
         }
+
+        field(10; "Test Project Code"; Code[50])
+        {
+            Caption = 'Test Project Code';
+            DataClassification = CustomerContent;
+            TableRelation = ATDDTestProject_DSK.Code;
+        }
+
     }
     keys
     {

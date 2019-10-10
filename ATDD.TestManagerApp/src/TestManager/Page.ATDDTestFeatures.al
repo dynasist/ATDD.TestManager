@@ -8,7 +8,6 @@ page 88971 "ATDDTestFeatures_DSK"
 
     layout
     {
-
         area(content)
         {
             repeater(Group)

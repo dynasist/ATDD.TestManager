@@ -11,11 +11,13 @@ table 88973 ATDDTestElement_DSK
         {
             Caption = 'Feature Code';
             DataClassification = CustomerContent;
+            TableRelation = ATDDTestFeature_DSK.Code;
         }
-        field(2; "Scenario Code"; Code[50])
+        field(2; "Scenario ID"; Integer)
         {
             Caption = 'Scenario Code';
             DataClassification = CustomerContent;
+            TableRelation = ATDDTestScenario_DSK.ID;
         }
 
         field(3; "Line No."; Integer)
@@ -33,10 +35,18 @@ table 88973 ATDDTestElement_DSK
             Caption = 'Value';
             DataClassification = CustomerContent;
         }
+
+        field(10; "Test Project Code"; Code[50])
+        {
+            Caption = 'Test Project Code';
+            DataClassification = CustomerContent;
+            TableRelation = ATDDTestProject_DSK.Code;
+        }
+
     }
     keys
     {
-        key(PK; "Feature Code", "Scenario Code", "Line No.")
+        key(PK; "Feature Code", "Scenario ID", "Line No.")
         {
             Clustered = true;
         }
