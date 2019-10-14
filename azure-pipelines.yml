@@ -6,11 +6,6 @@ variables:
 
 steps:
 
-- task: DownloadSecureFile@1
-  name: secureLicense
-  inputs:
-    secureFile: 'DynSol_BC15.flf'
-
 - task: ALOpsDockerStart@1
   inputs:
     docker_image: mcr.microsoft.com/businesscentral/sandbox
@@ -24,7 +19,7 @@ steps:
   displayName: 'ALOps License Import'
   inputs:
     usedocker: true
-    license_path: $(secureLicense.secureFilePath)
+    license_path: $(licenseFile)
 
 - task: ALOpsAppCompiler@1
   displayName: 'Compile Extension'
