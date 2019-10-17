@@ -8,8 +8,9 @@ steps:
 
 - task: ALOpsDockerStart@1
   inputs:
-    docker_image: mcr.microsoft.com/businesscentral/sandbox
+    #docker_image: mcr.microsoft.com/businesscentral/sandbox    
     docker_pull: false
+    ignore_no_container_warning: true
 
 - task: ALOpsDockerWait@1
   inputs:
@@ -69,5 +70,7 @@ steps:
 
 - task: ALOpsDockerRemove@1
   displayName: 'Remove Docker Container'
+  inputs:
+    usedocker: true
   enabled: true
   condition: always()
