@@ -9,7 +9,7 @@ steps:
 - task: ALOpsDockerStart@1
   inputs:
     docker_image: mcr.microsoft.com/businesscentral/sandbox
-    docker_pull: true
+    docker_pull: false
 
 - task: ALOpsDockerWait@1
   inputs:
