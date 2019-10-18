@@ -35,6 +35,12 @@ steps:
     usedocker: true
     nav_artifact_app_filter: '*.app'   
     skip_verification: true 
+
+- task: ALOpsAppPublish@1
+  displayName: 'Publish AL-App'
+  inputs:
+    usedocker: true
+    skip_verification: true 
     installaltesttool: true    
     install_al_app_names: |
      Tests-TestLibraries
