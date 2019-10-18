@@ -35,7 +35,14 @@ steps:
     usedocker: true
     nav_artifact_app_filter: '*.app'   
     skip_verification: true 
-
+    installaltesttool: true    
+    install_al_app_names: 
+      Tests-TestLibraries
+      System Application Test
+      System Application Test Library
+      Any
+      Library Assert
+      Test Runner
 - task: ALOpsAppCompiler@1
   displayName: 'Compile Extension'
   inputs:
@@ -49,16 +56,15 @@ steps:
   inputs:
     usedocker: true
     nav_artifact_app_filter: '*.app'   
-    skip_verification: true 
-    installaltesttool: true
+    skip_verification: true     
 
 - task: ALOpsAppTest@1
   displayName: 'Run TestSuite'
   inputs:
     usedocker: true
     import_action: "Skip"
-    testfilter: $(TestFilter)
-    show_available_tests: true
+    #testfilter: $(TestFilter)
+    show_available_tests: true    
   continueOnError: true    
 
 - task: PublishTestResults@2
