@@ -2,7 +2,7 @@ name: $(Build.BuildId)
 
 variables:
   AppVersion: '1.0.[yyyyWW].*'
-  TestFilter: '88980..88989'
+  #TestFilter: '88980..88989'
 
 steps:
 
@@ -10,7 +10,6 @@ steps:
   inputs:
     docker_image: mcr.microsoft.com/businesscentral/sandbox    
     docker_pull: false
-    ignore_no_container_warning: true
 
 - task: ALOpsDockerWait@1
   inputs:
@@ -51,6 +50,7 @@ steps:
     usedocker: true
     nav_artifact_app_filter: '*.app'   
     skip_verification: true 
+    installaltesttool: true
 
 - task: ALOpsAppTest@1
   displayName: 'Run TestSuite'
