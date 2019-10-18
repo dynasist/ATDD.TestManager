@@ -43,7 +43,6 @@ steps:
      Any
      Library Assert
      Test Runner
-     ATDD TestManager
 
 - task: ALOpsAppCompiler@1
   displayName: 'Compile Extension'
