@@ -8,7 +8,7 @@ steps:
 
 - task: ALOpsDockerStart@1
   inputs:
-    #docker_image: mcr.microsoft.com/businesscentral/sandbox    
+    docker_image: mcr.microsoft.com/businesscentral/sandbox    
     docker_pull: false
     ignore_no_container_warning: true
 
