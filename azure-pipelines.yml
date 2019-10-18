@@ -36,12 +36,13 @@ steps:
     nav_artifact_app_filter: '*.app'   
     skip_verification: true 
     installaltesttool: true    
-    install_al_app_names: | Tests-TestLibraries
-      System Application Test
-      System Application Test Library
-      Any
-      Library Assert
-      Test Runner
+    install_al_app_names: |
+     Tests-TestLibraries
+     System Application Test
+     System Application Test Library
+     Any
+     Library Assert
+     Test Runner
 
 - task: ALOpsAppCompiler@1
   displayName: 'Compile Extension'
