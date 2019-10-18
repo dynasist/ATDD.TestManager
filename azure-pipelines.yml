@@ -27,7 +27,6 @@ steps:
     usedocker: true
     nav_app_version: $(AppVersion)
     failed_on_warnings: true    
-    download_test_symbols: true
     targetproject: ./ATDD.TestManagerApp/app.json     
 
 - task: ALOpsAppPublish@1
@@ -38,7 +37,7 @@ steps:
     skip_verification: true 
     installaltesttool: true    
     install_al_app_names: "Tests-TestLibraries
-System Application Test'
+System Application Test
 System Application Test Library
 Any
 Library Assert
