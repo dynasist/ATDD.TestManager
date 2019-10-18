@@ -27,6 +27,7 @@ steps:
     usedocker: true
     nav_app_version: $(AppVersion)
     failed_on_warnings: true    
+    download_test_symbols: true
     targetproject: ./ATDD.TestManagerApp/app.json     
 
 - task: ALOpsAppPublish@1
@@ -36,12 +37,12 @@ steps:
     nav_artifact_app_filter: '*.app'   
     skip_verification: true 
     installaltesttool: true    
-    install_al_app_names: Tests-TestLibraries
-      System Application Test
-      System Application Test Library
-      Any
-      Library Assert
-      Test Runner
+    install_al_app_names: "Tests-TestLibraries
+System Application Test'
+System Application Test Library
+Any
+Library Assert
+Test Runner"
 
 - task: ALOpsAppCompiler@1
   displayName: 'Compile Extension'
@@ -62,9 +63,13 @@ steps:
   displayName: 'Run TestSuite'
   inputs:
     usedocker: true
-    import_action: "Skip"
+    #import_action: "Skip"
     #testfilter: $(TestFilter)
-    show_available_tests: true    
+    show_available_tests: false
+    import_testtoolkit: false
+    installaltesttool: false
+    testpage: '130455'   
+    failed_test_action: Warning
   continueOnError: true    
 
 - task: PublishTestResults@2
